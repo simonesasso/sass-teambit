@@ -1,0 +1,207 @@
+// GENERALI---------------------------------------
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #58402C;
+  &:hover{
+    color: blue;
+  }
+}
+@mixin my-display-flex {
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+}
+// NAVBAR--------------------------
+nav{
+  color: grey;
+  span{
+    margin-left: 10px;
+    &:hover{
+     color: blue;
+    }
+  }
+}
+
+
+
+
+nav {
+@include my-display-flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+width: 90%;
+margin: 0 auto;
+border-bottom: 1px solid grey;
+}
+.sign-up{
+  color: blue;
+  border: 1px solid blue;
+  padding: 7px;
+  border-radius: 10px;
+  &:hover{
+    color: white;
+    background-color: blue;
+  }
+}
+// SECTION UFFICIO--------------------------------------
+.section-ufficio{
+  @include my-display-flex;
+  padding: 100px 0;
+  width: 90%;
+  margin: 0 auto;
+  color: #58402C;
+  img{
+    height: auto;
+    width: 50%;
+  }
+  h2{
+    font-size: 55px;
+
+  }
+  h6{
+   font-size: 25px;
+   font-weight: normal;
+   margin:  20px 0;
+  }
+
+
+  span{
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    background-color: darkblue;
+    border-radius: 10px;
+  }
+}
+// SECTION ROSA-RABBITS-------------------------------
+.rosa-rabbits{
+  color: #58402C;
+  background-color:#FFE7D2;
+  padding: 70px 0;
+  text-align: center;
+  .section-inf{
+    padding-top: 70px;
+    border-top: 1px solid grey;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section-sup{
+    padding-bottom: 70px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  img{
+    width: 150px;
+    height: 100px;
+  }
+  .green-rabbit{
+    height: 320px;
+    width: auto;
+    margin-top: 65px;
+  }
+  h4{
+    font-weight: normal;
+  }
+  .h3-works{
+    margin-top: 55px;
+  }
+}
+.tre-img{
+  @include my-display-flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+// section txt e screenshot-------------------------------
+.cont-txt-img{
+  @include my-display-flex;
+  padding: 40px 0;
+  div{
+    width: 50%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .txt-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 50px;
+  }
+  .text-left{
+    div{
+      margin-left: 50%;
+    }
+  }
+  .text-right,.text-left{
+     div{
+       height: 80%;
+       @include my-display-flex;
+       flex-direction: column;
+       justify-content: space-between;
+     }
+   }
+}
+// SECTION GET STARTED------------------
+.section-get-started{
+  text-align: center;
+  padding: 70px 0;
+  background-color: #FFE7D2;
+  p{
+    position: relative;
+   width: 400px;
+   background-color: white;
+   margin: 40px auto;
+   padding: 10px;
+   border-radius: 10px;
+   border: 1px solid grey;
+   #quote{
+     position: absolute;
+     width: 25px;
+     height: auto;
+    top: -12px;
+    left: -1px;
+   }
+  }
+  span{
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    background-color: darkblue;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+
+  h6{
+    margin-bottom: 35px;
+  }
+}
+// FOOTER----------------------------
+footer{
+  width: 80%;
+  margin: 0 auto;
+  @include my-display-flex;
+ padding: 70px 0;
+ li{
+   padding: 3px;
+
+ }
+ div{
+   width: 40%;
+ }
+ .div-ul{
+   width: 60%;
+   @include my-display-flex;
+   justify-content: space-between;
+ }
+
+}
