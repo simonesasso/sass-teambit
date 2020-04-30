@@ -29,6 +29,28 @@ nav{
     }
   }
 }
+.span-menu{
+  position: relative;
+  cursor: pointer;
+  div{
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    li{
+      padding: 5px 0;
+    }
+  }
+  &:hover div{
+    display: block;
+  }
+}
+
+
 
 
 
@@ -203,5 +225,19 @@ footer{
    @include my-display-flex;
    justify-content: space-between;
  }
-
+ .footer-logo{
+  @include my-display-flex;
+  justify-content: flex-start;
+   width: 40%;
+   div{
+     width: auto;
+     margin-right: 15px;
+     span{
+       font-weight: bold;
+       span{
+         color: blue;
+       }
+     }
+   }
+ }
 }

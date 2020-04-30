@@ -29,6 +29,30 @@ nav span:hover {
   color: blue;
 }
 
+.span-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.span-menu div {
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  right: 1%;
+}
+
+.span-menu div li {
+  padding: 5px 0;
+}
+
+.span-menu:hover div {
+  display: block;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -215,5 +239,24 @@ footer .div-ul {
   width: 60%;
   display: flex;
   justify-content: space-between;
+}
+
+footer .footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+footer .footer-logo div {
+  width: auto;
+  margin-right: 15px;
+}
+
+footer .footer-logo div span {
+  font-weight: bold;
+}
+
+footer .footer-logo div span span {
+  color: blue;
 }
 
