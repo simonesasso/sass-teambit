@@ -154,6 +154,10 @@ nav span:hover {
   padding: 40px 0;
 }
 
+.cont-txt-img h4 {
+  color: #58402c;
+}
+
 .cont-txt-img div {
   width: 50%;
 }
@@ -212,6 +216,11 @@ nav span:hover {
   background-color: darkblue;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.section-get-started h2 {
+  color: #58402c;
+  font-size: 40px;
 }
 
 .section-get-started h6 {

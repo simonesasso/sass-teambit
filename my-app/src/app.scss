@@ -149,6 +149,9 @@ nav{
 .cont-txt-img{
   @include my-display-flex;
   padding: 40px 0;
+  h4{
+    color: #58402c;
+  }
   div{
     width: 50%;
   }
@@ -199,7 +202,10 @@ nav{
   span{
     @include bottone;
   }
-
+  h2{
+    color: #58402c;
+    font-size: 40px;
+  }
 
   h6{
     margin-bottom: 35px;
