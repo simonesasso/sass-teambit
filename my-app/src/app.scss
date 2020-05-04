@@ -19,8 +19,23 @@ display: -ms-flexbox;
 display: -webkit-flex;
 display: flex;
 }
+@mixin bottone {
+  font-size: 16px;
+  color: white;
+  padding: 8px;
+  background-color: darkblue;
+  border-radius: 10px;
+  cursor: pointer;
+}
 // NAVBAR--------------------------
 nav{
+  @include my-display-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
   color: grey;
   span{
     margin-left: 10px;
@@ -52,18 +67,6 @@ nav{
 
 
 
-
-
-
-nav {
-@include my-display-flex;
-justify-content: space-between;
-align-items: center;
-height: 70px;
-width: 90%;
-margin: 0 auto;
-border-bottom: 1px solid grey;
-}
 .sign-up{
   color: blue;
   border: 1px solid blue;
@@ -74,6 +77,10 @@ border-bottom: 1px solid grey;
     background-color: blue;
   }
 }
+
+
+
+
 // SECTION UFFICIO--------------------------------------
 .section-ufficio{
   @include my-display-flex;
@@ -97,11 +104,7 @@ border-bottom: 1px solid grey;
 
 
   span{
-    font-size: 16px;
-    color: white;
-    padding: 8px;
-    background-color: darkblue;
-    border-radius: 10px;
+    @include bottone;
   }
 }
 // SECTION ROSA-RABBITS-------------------------------
@@ -179,7 +182,7 @@ border-bottom: 1px solid grey;
   background-color: #FFE7D2;
   p{
     position: relative;
-   width: 400px;
+   width: 500px;
    background-color: white;
    margin: 40px auto;
    padding: 10px;
@@ -194,12 +197,7 @@ border-bottom: 1px solid grey;
    }
   }
   span{
-    font-size: 16px;
-    color: white;
-    padding: 8px;
-    background-color: darkblue;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    @include bottone;
   }
 
 

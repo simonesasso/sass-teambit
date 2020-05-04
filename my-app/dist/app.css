@@ -18,6 +18,13 @@ a:hover {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
   color: grey;
 }
 
@@ -51,16 +58,6 @@ nav span:hover {
 
 .span-menu:hover div {
   display: block;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  width: 90%;
-  margin: 0 auto;
-  border-bottom: 1px solid grey;
 }
 
 .sign-up {
@@ -104,6 +101,7 @@ nav {
   padding: 8px;
   background-color: darkblue;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .rosa-rabbits {
@@ -191,7 +189,7 @@ nav {
 
 .section-get-started p {
   position: relative;
-  width: 400px;
+  width: 500px;
   background-color: white;
   margin: 40px auto;
   padding: 10px;
@@ -213,7 +211,7 @@ nav {
   padding: 8px;
   background-color: darkblue;
   border-radius: 10px;
-  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .section-get-started h6 {
